@@ -55,7 +55,7 @@ table, th, td {
 <br>
 <br>
 
-<!- make a cell span more than one column, use the colspan attribute->
+<!--make a cell span more than one column, use the colspan attribute-->
 <table style="width:100%;">
   <tr>
     <th>Name</th>
@@ -71,7 +71,7 @@ table, th, td {
 <br>
 <br>
 
-<!-make a cell span more than one row, use the rowspan attribute->
+<!--make a cell span more than one row, use the rowspan attribute-->
 <table style="width:100%;">
   <tr>
     <th>Name:</th>

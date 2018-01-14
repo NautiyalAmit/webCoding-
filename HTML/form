@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!--If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php"-->
+
+<!--If the action attribute is omitted, the action is set to the current page-->
+<!--The Target Attribute
+The target attribute specifies if the submitted result will open in a new browser tab, a frame, or in the current window.
+The default value is "_self" which means the form will be submitted in the current window.
+To make the form result open in a new browser tab, use the value "_blank"
+Other legal values are "_parent", "_top", or a name representing the name of an iframe.-->
+
+<!--The method attribute specifies the HTTP method (GET or POST) to be used when submitting the form data-->
+<form action="/action_page.php" target="_blank" method ="post">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse">
+  <br><br>
+
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other<br>
+
+   Which car do  ypu own?
+  <select name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="bmw">bmw</option>
+  <option value="mercedes">mercedes</option>
+  <!--To define a pre-selected option, add the selected attribute to the option-->
+  <option value="audi" selected>Audi</option>
+</select>
+<br>
+<br>
+size attribute to specify the number of visible values:
+<br>
+<br>
+<br>
+
+<select name="cars" size="3">
+  <option value="volvo">Volvo</option>
+  <option value="bmw">bmw</option>
+  <option value="mercedes">mercedes</option>
+  <option value="audi" selected>Audi</option>
+  </select>
+  <br>
+  <br>
+  multiple attribute to allow the user to select more than one value holding ctrl:
+  <br>
+  <br>
+  <br>
+  <select name="cars" size="3" multiple>
+    <option value="volvo">Volvo</option>
+    <option value="bmw">bmw</option>
+    <option value="mercedes">mercedes</option>
+    <option value="audi" >Audi</option>
+    </select>
+<br>
+<br>
+<br>
+Address:
+<textarea name="address" rows="5" cols="10">
+enter your address.
+</textarea>
+  <input type="submit" value="Submit">
+
+</form>
+
+
+</body>
+</html>

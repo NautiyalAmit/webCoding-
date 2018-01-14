@@ -19,7 +19,7 @@ type="i"	The list items will be numbered with lowercase roman numbers
 </ol>
 <br>
 
-<!-description List->
+<!--description List-->
 <dl>
   <dt>Coffee</dt>
   <dd>- black hot drink</dd>
@@ -28,7 +28,7 @@ type="i"	The list items will be numbered with lowercase roman numbers
 </dl>
 
 <br>
-<!-nested List->
+<!--nested List-->
 <ul>
   <li>Coffee</li>
   <li>Tea
