@@ -1,0 +1,29 @@
+<HTML>
+<body>
+<!--The CSS list-style-type property is used to define the style of the list item marker:-->
+ disc	Sets the list item marker to a bullet (default)
+ circle	Sets the list item marker to a circle
+ square	Sets the list item marker to a square
+ none	The list items will not be marked-->
+ <!--disk-->
+ <ul>
+   <li>Coffee</li>
+   <li>Tea</li>
+   <li>Milk</li>
+ </ul>
+ <br>
+  <!--circle-->
+ <ul style="list-style-type:circle">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+<br>
+ <!--square-->
+ <ul style="list-style-type:square">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+ </body>
+ </HTML>

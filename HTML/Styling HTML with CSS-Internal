@@ -1,0 +1,49 @@
+<!doctype html>
+<!--CSS can be added to HTML elements in 3 ways:
+
+Inline - by using the style attribute in HTML elements
+Internal - by using a <style> element in the <head> section
+External - by using an external CSS file-->
+
+<html>
+<head>
+<!--Internal CSS-->
+<style>
+h1 {
+    color: blue;
+    font-family: verdana;
+    font-size: 300%;
+}
+p  {
+    color: red;
+    font-family: courier;
+    font-size: 160%;
+    border: 1px solid powderblue;
+    <!-CSS Padding
+    The CSS padding property defines a padding (space) between the text and the border-->
+    padding: 30px;
+    <!-CSS Margin->
+    margin: 50px;
+    <!-style for the element with the specific id(p01)->
+    #p01 {
+    color: blue;
+         }
+<!--style for the element with the specific class(error)-->
+         p.error {
+    color: red;
+}
+}
+</style>
+</head>
+<body>
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+<p id="p01">I am different</p>
+<!--The class Attribute
+To define a style for a special type of elements, add a class attribute to the element-->
+
+<p class="error">I am different</p>
+</body>
+
+</html>

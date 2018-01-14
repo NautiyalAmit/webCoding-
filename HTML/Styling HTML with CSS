@@ -1,0 +1,17 @@
+<!doctype html>
+<!--CSS can be added to HTML elements in 3 ways:
+
+Inline - by using the style attribute in HTML elements
+Internal - by using a <style> element in the <head> section
+External - by using an external CSS file-->
+
+<html>
+
+<body>
+<!--Inline-->
+<h1 style="color:blue;">This is a Blue Heading</h1>
+
+
+</body>
+
+</html>
