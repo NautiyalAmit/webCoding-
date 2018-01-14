@@ -1,0 +1,40 @@
+<!doctype html>
+<!---The lang Attribute-->
+ <html lang="en-US">
+
+<head>
+<!--The title Attribute-->
+<title> A Simple HTML Document </title>
+<body>
+<!--html paragraph and heading tag--->
+<h1> heading1 </h1>
+<!--html bigger heading-->
+<h1 style="font-size:60px"> heading 2</h1>
+<p>This is paragraph 1 </p>
+<!--HTML Horizontal Rules
+The <hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.-->
+<hr>
+<h1 style="font-size:60px"> heading 3</h1>
+<p> this is paragraph 2 </p>
+<hr>
+<p> paragraph </p>
+<!-- HTML Line Breaks-->
+<p>This is<br>a paragraph<br>with line breaks</p>
+<!--href Attribute-
+Double quotes around attribute values are the most common in HTML, but single quotes can also be used.-->
+<a href="www.google.com">this is a link </a >
+<!--src Attribute+ The alt Attribute +width and height Attributes-->
+<imgsrc="" alt "this is image" width ="50" height="50">
+<!--The style Attribute-->
+<p style="color: red">  this is red color </p>
+
+<!--The HTML <pre> Element
+The HTML <pre> element defines preformatted text.
+The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks-->
+<p>The pre tag preserves both spaces and line breaks:</p>
+<pre>The pre tag preserves both spaces and line breaks:</pre>
+
+
+<body>
+
+</head> </html>

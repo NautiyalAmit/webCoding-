@@ -1,0 +1,33 @@
+<!doctype HTML>
+<!--HTML Formatting Elements:
+
+Formatting elements are designed to display special types of text:
+
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Small text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text -->
+
+<HTML>
+<body>
+<b>this is Bold</b>
+<strong>strong</strong>
+<i>italic</i>
+<em>Emphasized</em>
+<mark>Marked</mark>
+<small>small</small>
+<del>Deleted</del>
+<ins>Inserted</ins>
+<sub>Subscript</sub>
+<sup>superscripted</sup>
+
+
+
+</body>
+</HTML>
