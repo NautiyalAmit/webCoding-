@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+<style>
+.city {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<p>Click the button, and a JavaScript hides all elements with the class name "city":</p>
+
+<button onclick="myFunction()">Hide elements</button>
+
+<h2 class="city">London</h2>

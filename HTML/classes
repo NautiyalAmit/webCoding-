@@ -1,0 +1,9 @@
+<style>
+.city {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+}
+</style>
+
+<h2 class="city">London</h2>

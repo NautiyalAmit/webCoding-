@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+<!-When the width property is set in a percentage value, the image will scale up and down when resizing the browser window->
+<img src="pic.jpg" style="width:100%;">
+
+</body>
+</html>
