@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="">
+First name:<br>
+
+<!--The value Attribute specifies the initial value for an input field-->
+<input type="text" name="firstname" value="John">
+<br>
+Last name:<br>
+<input type="text" name="lastname">
+<br>
+readonly attribute specifies that the input field is read only (cannot be changed):
+<br>
+First name:<br>
+<input type="text" name="firstname" value ="John" readonly>
+<br>
+Last name:<br>
+<input type="text" name="lastname">
+<br>
+
+Disabled input field is unusable and un-clickable, and its value will not be sent when submitting the form
+First name:<br>
+<input type="text" name="firstname" value="John" disabled>
+<br>
+</form>
+<br>
+the autocomplete attribute specifies whether a form or input field should have autocomplete on or off.
+
+<form action="/action_page.php" autocomplete="on">
+  First name:<input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  E-mail: <input type="email" name="email" autocomplete="off"><br>
+  <input type="submit">
+</form>
+<br>
+The autofocus Attribute
+<br>
+<form action="/action_page.php">
+  First name:<input type="text" name="fname" autofocus><br>
+  Last name: <input type="text" name="lname"><br>
+</form>
+<br>
+The formaction attribute specifies the URL of a file that will process the input control when the form is submitted.
+
+The formaction attribute overrides the action attribute of the <form> element.
+
+The formaction attribute is used with type="submit" and type="image"
+<br>
+<form action="/action_page.php">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit" value="Submit"><br>
+  <input type="submit" formaction="/action_page2.php"
+  value="Submit as admin">
+</form>
+<br>
+The formenctype attribute specifies how the form data should be encoded when submitted (only for forms with method="post").
+<br>
+<form action="/action_page_binary.asp" method="post">
+  First name: <input type="text" name="fname"><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formenctype="multipart/form-data"
+  value="Submit as Multipart/form-data">
+</form>
+<br>
+The formmethod attribute defines the HTTP method for sending form-data to the action URL.
+
+The formmethod attribute overrides the method attribute of the <form> element.
+
+The formmethod attribute can be used with type="submit" and type="image"
+<br>
+<form action="/action_page.php" method="get">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit" value="Submit">
+  <input type="submit" formmethod="post" value="Submit using POST">
+</form>
+<br>The placeholder Attribute<br>
+<form action="/action_page.php">
+  <input type="text" name="fname" placeholder="First name"><br>
+  <input type="text" name="lname" placeholder="Last name"><br>
+  <br>The required attribute specifies that an input field must be filled out before submitting the form<br>
+  Username: <input type="text" name="usrname" required>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

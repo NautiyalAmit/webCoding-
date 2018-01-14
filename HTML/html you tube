@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+YouTube Autoplay:
+<br>
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY"?autoplay=1">
+</iframe>
+
+<br>
+loop in  YouTube:
+<br>
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+</iframe>
+<br>
+control in YouTube:
+<br>
+ <iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+</iframe>
+</body>
+</html>

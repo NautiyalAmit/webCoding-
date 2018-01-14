@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude +
+    "<br>Longitude: " + position.coords.longitude;
+}
+
+function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            x.innerHTML = "User denied the request for Geolocation."
+            break;
+        case error.POSITION_UNAVAILABLE:
+            x.innerHTML = "Location information is unavailable."
+            break;
+        case error.TIMEOUT:
+            x.innerHTML = "The request to get user location timed out."
+            break;
+        case error.UNKNOWN_ERROR:
+            x.innerHTML = "An unknown error occurred."
+            break;
+    }
+}
+</script>
+<br>
+Displaying the Result in a Map:
+To display the result in a map, you need access to a map service, like Google Maps.
+In the example below, the returned latitude and longitude is used to show the location in a Google Map (using a static image):
+<br>
+<p id="demo">Click the button to get your position.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<div id="mapholder"></div>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    var latlon = position.coords.latitude + "," + position.coords.longitude;
+    var img_url = "https://maps.googleapis.com/maps/api/staticmap?center="
+    +latlon+"&zoom=14&size=400x300&key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU";
+    document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
+}
+//To use this code on your website, get a free API key from Google.
+//Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+
+function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            x.innerHTML = "User denied the request for Geolocation."
+            break;
+        case error.POSITION_UNAVAILABLE:
+            x.innerHTML = "Location information is unavailable."
+            break;
+        case error.TIMEOUT:
+            x.innerHTML = "The request to get user location timed out."
+            break;
+        case error.UNKNOWN_ERROR:
+            x.innerHTML = "An unknown error occurred."
+            break;
+    }
+}
+</script>
+
+<br>Geolocation Object - Other  Methods
+The Geolocation object also has other interesting methods:
+watchPosition() - Returns the current position of the user and continues to return updated position as the user moves (like the GPS in a car).
+clearWatch() - Stops the watchPosition() method.
+<br>
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.watchPosition(showPosition);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";}
+    }
+
+function showPosition(position) {
+    x.innerHTML="Latitude: " + position.coords.latitude +
+    "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+
+</body>
+</html>
