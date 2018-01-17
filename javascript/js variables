@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Variables</h2>
+<p id="demo"></p>
+<script>
+var x = 5;
+var y = 6;
+var z = x + y;
+document.getElementById("demo").innerHTML ="The value of z is: " + z;
+</script>
+
+<p id="a"></p>
+<script>
+var a=3+3+3;
+document.getElementById("a").innerHTML="The value of a is:"+a;
+</script>
+
+<p id="b"></p>
+<script>
+//strings are concatenated in js
+var b="amit"+"nautiyal";
+document.getElementById("b").innerHTML="The value of b is:+b";
+</script>
+</body>
+</html>

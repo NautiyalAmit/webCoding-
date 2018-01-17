@@ -1,0 +1,21 @@
+<html>
+<head>
+</head>
+<body>
+<p id="a"></p>
+<script>
+  function myFunction (){
+  var inputValue = document.getElementById("_input").value;
+  var splitArray = inputValue.split (" ");
+  var newArray = [];
+  for (var x = 0; x <= splitArray.length; x++){
+  newArray[x] = splitArray[x].replace(splitArray[x][0], splitArray[x][0].toUpperCase());
+  document.getElementById("a").innerHTML = newArray.join(" ");
+  }
+  }
+  </script>
+Enter the  String: <input type="text" id="_input"/>
+<button onclick="myFunction ()"> Click Here </button>
+
+</body>
+</html>

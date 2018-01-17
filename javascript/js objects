@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="a"></p>
+<script>
+var person = {
+    firstName : "amit",
+    lastName  : "nautiyal",
+    age       : 24,
+    eyeColor  : "black"
+};
+
+document.getElementById("a").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>
+</body>
+</html>

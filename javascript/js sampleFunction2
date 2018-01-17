@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="a"></p>
+<script>
+function myFunction()
+{
+  var f=document.getElementById("_input").value;
+  console.log(f);
+  var c= (f -32)*(0.5556);
+  document.getElementById("a").innerHTML=c;
+}
+</script>
+Enter the temp in Fahrenheit:<input type="text" id="_input">
+<br>
+<button onclick="myFunction()">Convert</button>
+
+</body>
+</html>
