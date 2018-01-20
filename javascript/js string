@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p> strings : </p>  
+<p id ="a"></p>
+<script>
+  //declaring the variables
+  var a ="i am amit  ";
+  var b ="i am called 'amit' ";
+  var c ='i am called "amit"';
+  x= a+"<br>"+b+"<br>"+c+"<br>";
+  document.getElementById('a').innerHTML=x;//print
+
+</script>
+<p> string length is: </p>
+<p id ="b"></p>
+<script>
+// finding  the string length
+ var d ="amit nautiyal";
+ document.getElementById('b').innerHTML=d.length;
+</script>
+
+
+
+</body>
+</html>
