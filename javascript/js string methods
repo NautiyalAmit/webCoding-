@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="a"></p>
+<script>
+
+//searching a string inside a string
+var str="i am writing this 'js' code";
+var pos=str.indexof("js");
+document.getElementById('a').innerHTML=pos;
+
+</script>
+</body>
+</html>
